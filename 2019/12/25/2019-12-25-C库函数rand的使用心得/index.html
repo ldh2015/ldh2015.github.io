@@ -21,19 +21,19 @@
         <nav class="header-nav">
             
             <a href="/" class="header-nav-link" >
-                Home
+                首页
             </a>
             
 
             
             <a href="/archives" class="header-nav-link">
-                Archives
+                归档
             </a>
             
 
             
             <a href="/tags" class="header-nav-link">
-                Tags
+                标签
             </a>
             
 
@@ -49,7 +49,7 @@
             <span></span>
         </div>
         <div class="mobile-nav-title">
-            <a href="/" class="mobile-nav-title-link">John Doe's Blog</a>
+            <a href="/" class="mobile-nav-title-link">ldh2015's Blog</a>
         </div>
 
     </div>
@@ -57,19 +57,19 @@
         <ul class="mobile-menu-list">
             <li class="mobile-menu-item">
                 <i class="iconfont icon-home"></i>
-                <a href="/" class="mobile-nav-link">Home</a>
+                <a href="/" class="mobile-nav-link">首页</a>
             </li>
             <li class="mobile-menu-item">
                 <i class="iconfont icon-archive"></i>
-                <a href="/archives" class="mobile-nav-link">Archives</a>
+                <a href="/archives" class="mobile-nav-link">归档</a>
             </li>
             <li class="mobile-menu-item">
                 <i class="iconfont icon-tag"></i>
-                <a href="/tags" class="mobile-nav-link">Tags</a>
+                <a href="/tags" class="mobile-nav-link">标签</a>
             </li>
             <li class="mobile-menu-item">
                 <i class="iconfont icon-about"></i>
-                <a href="/about/" class="mobile-nav-link">About</a>
+                <a href="/about/" class="mobile-nav-link">关于</a>
             </li>
         </ul>
     </nav>
@@ -83,7 +83,7 @@
             <div class="post-meta">
                 <span class="post-time">2019-12-25</span>
                 
-                <span class="post-visit"> visited：<span id="busuanzi_value_page_pv"></span></span>
+                <span class="post-visit"> 阅读次数：<span id="busuanzi_value_page_pv"></span></span>
             </div>
         </div>
         <div class="post-toc" id="post-toc">
@@ -95,6 +95,8 @@
 </div>
         <div class="post-content">
             <h1 id="rand-srand生成伪随机数"><a href="#rand-srand生成伪随机数" class="headerlink" title="rand,srand生成伪随机数"></a>rand,srand生成伪随机数</h1><p>伪随机数: 随机数函数产生的是通过公式计算出来的一系列伪随机数，这个公式会采用一个种子数计算出一个数，而该数将成为产生下一个数的种子数。</p>
+<a id="more"></a>
+
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;time.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="comment">//种子相同，每次生成的序列也是相同的</span></span><br><span class="line">srand(<span class="number">1</span>);</span><br><span class="line"><span class="comment">//使用时一般使用time生成随机种子</span></span><br><span class="line"><span class="comment">//srand((unsigned int)time(NULL));</span></span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">10</span>; i++)</span><br><span class="line">&#123;</span><br><span class="line">    <span class="comment">//生成0~99范围内的10个伪随机数</span></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"%d\t"</span>, rand() % <span class="number">100</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <h1 id="rand在windows和Linux下的区别"><a href="#rand在windows和Linux下的区别" class="headerlink" title="rand在windows和Linux下的区别"></a>rand在windows和Linux下的区别</h1><h4 id="RAND-MAX的不同"><a href="#RAND-MAX的不同" class="headerlink" title="RAND_MAX的不同"></a>RAND_MAX的不同</h4><p>Windows下：</p>
@@ -134,13 +136,13 @@
             <a class="prev" href="/2019/12/25/2019-12-25-Github%E5%86%99%E5%8D%9A%E5%AE%A2%E6%95%99%E7%A8%8B/">
                 <i class="iconfont icon-prev"></i>
                 <span class="nav-default">Github写博客教程</span>
-                <span class="nav-mobile">Prev</span>
+                <span class="nav-mobile">上一篇</span>
             </a>
         
         
             <a class="next" href="/2019/12/25/2019-12-17-LearningWebRTC-RTP-RTCP/">
                 <span class="nav-default">WebRTC-RTP和RTCP</span>
-                <span class="nav-mobile">Next</span>
+                <span class="nav-mobile">下一篇</span>
                 <i class="iconfont icon-next"></i>
             </a>
         
@@ -150,6 +152,10 @@
     </div>
 </div>
 <footer class="footer-social">
+    
+    <a class="social-link" target="_blank" href="https://github.com/ldh2015">
+        <i class="iconfont icon-github"></i>
+    </a>
     
 
     
@@ -163,11 +169,11 @@
             
             2019
             &nbsp;<i class="iconfont icon-heart"></i>&nbsp;
-            <a target="_blank" href="https://github.com/iJinxin">John Doe</a>
+            <a target="_blank" href="https://github.com/ldh2015">ldh2015</a>
         </p>
         <p class="theme-info">
             Powered by <a target="_blank" href="https://hexo.io">Hexo</a>  |  Theme -
-            <a target="_blank" href="https://github.com/iJinxin/hexo-theme-sky">Sky</a>
+            <a target="_blank" href="https://github.com/ldh2015/hexo-theme-sky">Sky</a>
         </p>
     </div>
 </footer>
