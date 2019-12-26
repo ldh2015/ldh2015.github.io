@@ -1,6 +1,6 @@
 ---
 title: WebRTC-RTP和RTCP
-tags: WebRTC,RTP,RTCP
+tags: WebRTC
 categories: WebRTC
 ---
 
